@@ -10,6 +10,7 @@ export class LoginPage{
     private pass:string;
     private loginbtn:string;
     readonly success:Locator;
+    readonly errorMessage:Locator;
 
     constructor(page:Page,base:BasePage){
         this.page = page;
@@ -19,8 +20,8 @@ export class LoginPage{
         this.email = ("//input[@id='input-email']");
         this.pass = ("//input[@id='input-password']");
         this.loginbtn = ("//input[@value='Login']");
-        this.success = page.locator("#content > h2:nth-child(1)")
-        
+      this.success = page.locator("//h2[text()='My Account']");
+        this.errorMessage = page.locator("//div[contains(@class,'alert-danger')]");
     }
     async loginAction(){
         await this.base.click(this.account);

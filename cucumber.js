@@ -9,8 +9,9 @@ module.exports = {
     ],
 
     require: [
-      "src/steps/**/*.ts",
-      "src/hooks/**/*.ts"
+    "src/step-definitions/**/*.ts",
+    "src/hooks/**/*.ts"
+
     ],
 
     paths: [

@@ -1,7 +1,5 @@
 import { defineConfig, devices } from '@playwright/test';
 import dotenv from 'dotenv';
-
-// Load environment file (.env.qa, .env.dev, .env.prod)
 dotenv.config({
   path: `.env.${process.env.ENV || 'qa'}`
 });
@@ -36,9 +34,9 @@ export default defineConfig({
       use: { ...devices['Desktop Firefox'] },
     },
 
-    {
-      name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
-    },
+    //{
+      //name: 'webkit',
+      //use: { ...devices['Desktop Safari'] },
+    //},
   ],
 });

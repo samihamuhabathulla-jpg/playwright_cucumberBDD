@@ -5,7 +5,6 @@ export class RegisterPage {
     private page: Page;
     private base: BasePage;
     
-    // String locators matching your style
     private account: string;
     private registerLink: string;
     private firstNameInput: string;

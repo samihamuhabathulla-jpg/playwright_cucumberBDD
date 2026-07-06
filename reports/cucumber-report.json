@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1661095700
+              "duration": 777195300
             }
           },
           {
@@ -22,9 +22,12 @@
             "keyword": "Given ",
             "line": 6,
             "name": "the user is on register page",
+            "match": {
+              "location": "src\\step-definitions\\registerSteps.ts:5"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 3005303899
             }
           },
           {
@@ -53,9 +56,12 @@
             "keyword": "When ",
             "line": 7,
             "name": "the user enters personal details",
+            "match": {
+              "location": "src\\step-definitions\\registerSteps.ts:12"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 966135500
             }
           },
           {
@@ -80,9 +86,12 @@
             "keyword": "And ",
             "line": 10,
             "name": "the user enters password details",
+            "match": {
+              "location": "src\\step-definitions\\registerSteps.ts:24"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 51498299
             }
           },
           {
@@ -90,9 +99,12 @@
             "keyword": "And ",
             "line": 13,
             "name": "clicks the continue button",
+            "match": {
+              "location": "src\\step-definitions\\registerSteps.ts:33"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 1098677300
             }
           },
           {
@@ -100,9 +112,12 @@
             "keyword": "Then ",
             "line": 14,
             "name": "the user should be redirected to the page successfully",
+            "match": {
+              "location": "src\\step-definitions\\registerSteps.ts:39"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 62201600
             }
           },
           {
@@ -110,24 +125,29 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 959938699
+              "duration": 781784200
             }
           }
         ],
         "tags": [
           {
-            "name": "@Register",
-            "line": 3
+            "name": "@register",
+            "line": 1
           }
         ],
         "type": "scenario"
       }
     ],
     "id": "registreing-into-the-tutorialsninja-page",
-    "line": 1,
+    "line": 2,
     "keyword": "Feature",
     "name": "Registreing into the TutorialsNinja Page",
-    "tags": [],
+    "tags": [
+      {
+        "name": "@register",
+        "line": 1
+      }
+    ],
     "uri": "src\\features\\Register.feature"
   },
   {
@@ -136,8 +156,8 @@
       {
         "description": "",
         "id": "tutorials-ninja-login-page;logging-into-the-site",
-        "keyword": "Scenario Outline",
-        "line": 4,
+        "keyword": "Scenario",
+        "line": 5,
         "name": "Logging into the site",
         "steps": [
           {
@@ -145,47 +165,59 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1040156100
+              "duration": 707278899
             }
           },
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 5,
+            "line": 6,
             "name": "the user is on Login page of Tutorials Ninja",
+            "match": {
+              "location": "src\\step-definitions\\loginSteps.ts:6"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 2753362900
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 6,
+            "line": 7,
             "name": "the user enters the mail and password",
+            "match": {
+              "location": "src\\step-definitions\\loginSteps.ts:12"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 463565300
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
-            "line": 7,
+            "line": 8,
             "name": "clicks the login button in the site",
+            "match": {
+              "location": "src\\step-definitions\\loginSteps.ts:20"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 978734200
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 8,
+            "line": 9,
             "name": "the user should be loggedIn successfully",
+            "match": {
+              "location": "src\\step-definitions\\loginSteps.ts:24"
+            },
             "result": {
-              "status": "undefined",
-              "duration": 0
+              "status": "passed",
+              "duration": 49633600
             }
           },
           {
@@ -193,24 +225,209 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 581546000
+              "duration": 391479100
             }
           }
         ],
         "tags": [
           {
+            "name": "@login",
+            "line": 1
+          },
+          {
             "name": "@ValidCredentials",
-            "line": 3
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "tutorials-ninja-login-page;logging-into-the-site-with-invalid-credentials",
+        "keyword": "Scenario Outline",
+        "line": 20,
+        "name": "Logging into the site with invalid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 647905500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "the user is on Login page of Tutorials Ninja",
+            "match": {
+              "location": "src\\step-definitions\\loginSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1937526300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "user enters email as \"invaliduser@gmail.com\" and \"Samiha@2005\"",
+            "match": {
+              "location": "src\\step-definitions\\loginSteps.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1529522400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "user clicks the login button",
+            "match": {
+              "location": "src\\step-definitions\\loginSteps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1159499800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "popup \"Warning: No match for E-Mail Address and/or Password.\" should be displayed successfully",
+            "match": {
+              "location": "src\\step-definitions\\loginSteps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 48777200
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 440649499
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login",
+            "line": 1
+          },
+          {
+            "name": "@InvalidCredentials",
+            "line": 11
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "tutorials-ninja-login-page;logging-into-the-site-with-invalid-credentials",
+        "keyword": "Scenario Outline",
+        "line": 21,
+        "name": "Logging into the site with invalid credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 608012399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 13,
+            "name": "the user is on Login page of Tutorials Ninja",
+            "match": {
+              "location": "src\\step-definitions\\loginSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1946162300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 14,
+            "name": "user enters email as \"samihasami205@gmail.com\" and \"Wrong@123\"",
+            "match": {
+              "location": "src\\step-definitions\\loginSteps.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 562443199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "user clicks the login button",
+            "match": {
+              "location": "src\\step-definitions\\loginSteps.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 703107899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "popup \"Warning: No match for E-Mail Address and/or Password.\" should be displayed successfully",
+            "match": {
+              "location": "src\\step-definitions\\loginSteps.ts:39"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 48472499
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 390887800
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login",
+            "line": 1
+          },
+          {
+            "name": "@InvalidCredentials",
+            "line": 11
           }
         ],
         "type": "scenario"
       }
     ],
     "id": "tutorials-ninja-login-page",
-    "line": 1,
+    "line": 2,
     "keyword": "Feature",
     "name": "Tutorials Ninja Login Page",
-    "tags": [],
+    "tags": [
+      {
+        "name": "@login",
+        "line": 1
+      }
+    ],
     "uri": "src\\features\\login.feature"
   }
 ]

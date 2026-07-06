@@ -1,2 +1,0 @@
-src\features\Register.feature:4
-src\features\login.feature:4

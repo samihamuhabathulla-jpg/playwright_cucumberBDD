@@ -1,6 +1,6 @@
+@register
 Feature: Registreing into the TutorialsNinja Page 
 
-@Register
 Scenario: Registering with credentials in tutorials Ninja 
 
 Given the user is on register page
