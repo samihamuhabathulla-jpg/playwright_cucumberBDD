@@ -4,11 +4,150 @@
     "elements": [
       {
         "description": "",
+        "id": "registreing-into-the-tutorialsninja-page;registering-with-credentials-in-tutorials-ninja",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "Registering with credentials in tutorials Ninja",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1848781599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "the user is on register page",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "firstname",
+                      "lastname",
+                      "email",
+                      "telephone"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "samiha",
+                      "M",
+                      "samihasami205@gmail.com",
+                      "9671567825"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 7,
+            "name": "the user enters personal details",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "password",
+                      "confirmPassword"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "Samiha@2005",
+                      "Samiha@2005"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "And ",
+            "line": 10,
+            "name": "the user enters password details",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "clicks the continue button",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "the user should be redirected to the page successfully",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 654072600
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Register",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "registreing-into-the-tutorialsninja-page",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Registreing into the TutorialsNinja Page",
+    "tags": [],
+    "uri": "src\\features\\Register.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
         "id": "tutorials-ninja-login-page;logging-into-the-site",
         "keyword": "Scenario Outline",
         "line": 4,
         "name": "Logging into the site",
         "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 810688799
+            }
+          },
           {
             "arguments": [],
             "keyword": "Given ",
@@ -47,6 +186,14 @@
             "result": {
               "status": "undefined",
               "duration": 0
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 596490699
             }
           }
         ],
