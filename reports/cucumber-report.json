@@ -1,0 +1,69 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "tutorials-ninja-login-page;logging-into-the-site",
+        "keyword": "Scenario Outline",
+        "line": 4,
+        "name": "Logging into the site",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "the user is on Login page of Tutorials Ninja",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "the user enters the mail and password",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "clicks the login button in the site",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "the user should be loggedIn successfully",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ValidCredentials",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "tutorials-ninja-login-page",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Tutorials Ninja Login Page",
+    "tags": [],
+    "uri": "src\\features\\login.feature"
+  }
+]
